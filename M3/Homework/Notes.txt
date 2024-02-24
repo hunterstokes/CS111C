@@ -1,0 +1,17 @@
+Use the correct object type.
+ - The questions refer to Multiset, ListFromOne, and List. 
+ - Read each question carefully to make sure you know which type of object is being used!
+ - Follow all specifications defined for those classes, including method names, return values, and indexing rules.
+ - You will lose points for syntax errors (including incorrect method names).
+Remember what it means to write at the client level.
+ - Writing code at the client level means you should write Java statements that only have access to the methods defined in the Multiset, ListFromOne, or List interfaces.
+ - You don't know anything about how these methods are implemented- you only know what is described and specified in the documentation of the class.
+ - In the driver program, I create objects using ArrayMultiset, ArrayFromOne, ArrayList, and LinkedList. This is only for testing purposes- you should not be referencing these classes for this homework. (We'll be learning about them soon!)
+Do not use other kinds of data structures.
+ - For full credit, do not convert any data structures to an array or use additional data structures such as arrays, ArrayLists, etc.
+ - The purpose of this homework is to practice with Multiset, ListFromOne, and List, not to practice manipulating arrays or other data structures.
+ - When listed on individual questions, you can create temporary data structures of a specific type. You will then need to initialize as one of the concrete classes (e.g., Multiset<Integer> temp = new ArrayMultiset<Integer>()). This is allowed.
+ - If not sure what you are allowed to use in an answer, post to discussion board.
+Account for special cases.
+ - Be sure to account for all situations so that your code will not crash.
+ - Unless explicitly stated otherwise, your code should run and produce an expected result for an empty and singleton multiset/list.
