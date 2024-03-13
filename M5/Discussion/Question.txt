@@ -1,0 +1,17 @@
+
+
+Node<String> n0 = new Node<String>("y");
+Node<String> n1 = new Node<String>("k", n0);
+Node<String> n2 = new Node<String>("c", n1);
+Node<String> n3 = new Node<String>("i", n2);
+Node<String> n4 = new Node<String>("p", n3);
+
+Node<String> firstNode = n4;              // line 1 Contents of Chain: p -> i -> c -> k -> y // Value of current: p
+Node<String> current = firstNode;         // line 2 Contents of Chain: p -> i -> c -> k -> y // Value of current: p
+current = current.next;                   // line 3 Contents of Chain: p -> i -> c -> k -> y // Value of current: i
+firstNode = firstNode.next;               // line 4 Contents of Chain: i -> c -> k -> y // Value of current: i
+current.next.data = "n";                  // line 5 Contents of Chain: i -> c -> n -> k -> y // Value of current: i
+current.next = current.next.next.next;    // line 6 Contents of Chain: i -> c -> k -> y // Value of current: i
+firstNode.data = "b";                     // line 7 Contents of Chain: b -> c -> k -> y // Value of current: i
+current = current.next;                   // line 8 Contents of Chain: b -> c -> k -> y // Value of current: c
+firstNode.next = current.next;            // line 9 Contents of Chain: b -> c -> k -> y // Value of current: c
